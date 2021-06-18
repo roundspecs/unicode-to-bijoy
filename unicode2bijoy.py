@@ -1,6 +1,7 @@
 """
-A python script that takes Unicode string converts it into Bijoy
+A python script that takes a Unicode string and converts it into Bijoy
 
+To use:
 >>> from unicode2bijoy import to_bijoy
 >>> to_bijoy("একা বসে তুমি")
 GKv e‡m Zywg
@@ -312,17 +313,19 @@ def to_bijoy(unicode_str: str):
     """
     Args:
         unicode_str: a string in unicode
+
     Returns:
         A python script that takes Unicode string converts it into Bijoy
-    Examples:
-        >>> to_bijoy("একা বসে তুমি")
-        GKv e‡m Zywg
-        >>> to_bijoy(\"\"\"একা বসে তুমি,
-        ... দেখছো কি একই আকাশ?
-        ... দিন শেষে তার তারাগুলো দিবে দেখা।\"\"\")
-        GKv e‡m Zywg,
-        ‡`L‡Qv wK GKB AvKvk?
-        w`b ‡k‡l Zvi Zviv¸‡jv w`‡e ‡`Lv|
+
+    To use:
+    >>> to_bijoy("একা বসে তুমি")
+    GKv e‡m Zywg
+    >>> to_bijoy(\"\"\"একা বসে তুমি,
+    ... দেখছো কি একই আকাশ?
+    ... দিন শেষে তার তারাগুলো দিবে দেখা।\"\"\")
+    GKv e‡m Zywg,
+    ‡`L‡Qv wK GKB AvKvk?
+    w`b ‡k‡l Zvi Zviv¸‡jv w`‡e ‡`Lv|
     """
     unicode_str = unicode_str.replace("য়", "য়").replace("\u200d", "\u200c")
     unicode_str_list = unicode_str.split('\n')

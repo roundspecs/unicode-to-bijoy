@@ -315,7 +315,7 @@ def to_bijoy(unicode_str: str):
         unicode_str: a string in unicode
 
     Returns:
-        A python script that takes Unicode string converts it into Bijoy
+        The string, after converting it to Bijoy
 
     To use:
     >>> to_bijoy("একা বসে তুমি")
